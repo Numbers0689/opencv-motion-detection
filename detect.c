@@ -2,8 +2,10 @@
 #include<opencv/highgui.h>
 #include<stdlib.h>
 #include<stdio.h>
+#include<unistd.h>
 
 int main(int argc, char** argv) {
+    sleep(10);
     CvCapture* capture = cvCaptureFromCAM(0);
     if (!capture) {
         printf("Error: Could not initialize camera capture.\n");
